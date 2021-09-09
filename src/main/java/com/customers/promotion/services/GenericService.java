@@ -4,12 +4,14 @@ import com.customers.promotion.dto.DtoBase;
 import com.customers.promotion.models.ModelBase;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
 import java.util.List;
 
 @SuppressWarnings("rawtypes")
+@Service
 public interface GenericService <T extends ModelBase>{
     List<T> findAll();
 
