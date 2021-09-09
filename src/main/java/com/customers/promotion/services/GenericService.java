@@ -11,7 +11,6 @@ import java.io.InputStream;
 import java.util.List;
 
 @SuppressWarnings("rawtypes")
-@Service
 public interface GenericService <T extends ModelBase>{
     List<T> findAll();
 

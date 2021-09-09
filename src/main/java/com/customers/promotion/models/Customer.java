@@ -6,6 +6,7 @@ package com.customers.promotion.models;
 
 import com.customers.promotion.dto.CustomerDto;
 
+import javax.mail.internet.MimeMessage;
 import javax.persistence.Entity;
 import java.time.LocalDate;
 
@@ -41,7 +42,7 @@ public class Customer extends ModelBase<CustomerDto>{
         this.birthday = birthday;
     }
 
-    public String getEmail() {
+    public MimeMessage getEmail() {
         return email;
     }
 
